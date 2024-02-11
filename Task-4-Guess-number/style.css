@@ -1,0 +1,59 @@
+body{
+    background-color:rgba(120, 146, 212, 0.8);
+}
+#guess-box{
+   border: 1px solid black;
+   height: 300px;
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   border-radius: 10px;
+  background-color:  rgba(78, 113, 202, 0.8)
+}
+input[type="number"]{
+    width: 100px;
+    border:none;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+   border-radius: 10px;
+}
+input[type="number"]:focus{
+   outline: 2px solid red;
+}
+input[type="button"]{
+    width: 60px;
+    border:none;
+    background-color: rgb(81, 176, 81);
+    height: 40px;
+   border-radius: 10px;
+}
+input[type="button"]:hover{
+    background-color: rgb(45, 92, 45);
+    color: white;
+}
+#output{
+    width: 200px;
+    height: 60px;
+    border:none;
+   border-radius: 10px;
+}
+.container{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+label{
+    color: rgba(15, 69, 64, 0.957);
+    font-weight: bold ;
+    font-size: larger;
+}
+span{
+    color: red;
+}

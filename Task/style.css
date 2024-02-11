@@ -1,0 +1,30 @@
+*{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    text-align: center;
+    padding-top: 250px;
+}
+.days{
+    border-top:2px solid white;
+    margin: 0px auto;
+    width: 200px;
+    font-size: 2rem ;
+    padding-top:20px;
+}
+
+h1{
+    font-size: 5rem;
+}
+.logo{
+    font-size: 24px;
+}
+
+body{
+    background-image: url("./pexels-james-wheeler-414612.jpg");
+    background-size:cover;
+}
+.coming{
+    text-transform: uppercase;
+}

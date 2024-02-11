@@ -1,0 +1,140 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+#header{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(58, 58, 137);
+    padding: 30px;
+}
+.logo{
+    position: relative;
+}
+li{
+    padding-left: 20px;
+}
+nav{
+    top: 15px;
+    position:relative;
+}
+ul{
+    display: flex;
+   justify-content: center;
+    flex-wrap: wrap;
+
+    /* float: right; */
+    list-style-type: none;
+    /* padding-right: 10px; */
+}
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+        color: rgb(199, 197, 197);
+}
+
+/* INTRO */
+.intro{
+    font-size: xx-large;
+    background-color: rgb(67, 67, 250);
+    text-align: center;
+    color: white;
+
+    padding: 50px;
+}
+.explore{
+    color: blue ;
+    font-weight: bold;
+    padding: 12px;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+}
+.explore:hover{
+    color: white;
+    background-color: rgb(107, 91, 91);
+    transition: background-color 1s linear;
+}
+
+/* Features */
+.feature{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-bottom:30px ;
+    justify-content: space-around;
+}
+.box{
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(220, 217, 217);
+    width: 200px;
+    height: 200px;
+}
+
+/* About us */
+.about-us{
+    text-align: center;
+    padding: 100px;
+    font-size:x-large;
+    background-color: rgb(220, 217, 217);
+
+}
+
+/* Contact us */
+.contact-us{
+    text-align: center;
+    font-size: x-large;
+}
+.contact-us input,textarea{
+    width: 60%;
+    padding: 10px;
+}
+.send-btn{
+    margin-top: 10px;
+    color: blue ;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+}
+.send-btn:hover{
+  color: white;
+  background-color: rgb(137, 137, 240);
+  transition: background-color 1s linear ;
+  transition:  color 1s linear ;
+}
+
+/* Footer */
+.footer{
+    margin-top: 5px;
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+    background-color: rgb(99, 140, 140);
+}
+
+@media (max-width:796px){
+    #header{
+       display: flex;
+       flex-direction: column;
+    }
+    ul{
+        /* flex-direction:column ; */
+        padding: 39px;
+    }
+    li{
+        padding-top:5px;
+    }
+}

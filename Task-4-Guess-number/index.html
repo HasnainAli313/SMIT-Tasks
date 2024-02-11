@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="guess-box" action="">
+            <label for="number">Enter guess number <span>i.e 1 - 3</span></label>
+            <input id="number" type="number" placeholder="">
+            <input onclick="guessNumber()"  type="button" value="Guess">
+            <input id="output" type="" readonly>
+        </form>
+    </div>
+
+<script >
+function guessNumber() {
+        let randomNumber = Math.random();
+        randomNumber = Math.ceil(randomNumber*6);
+        console.log( randomNumber );
+
+        let win = false;
+        for(let i = 0; i < 3;i++) {
+            let guess = document.getElementById("number").value;
+            if(guess === randomNumber){
+                win = true;
+                break;
+            }
+        }
+        if(win){
+            document.getElementById("output").value = "You won the round!";
+        }
+        else{
+            document.getElementById("output").value = "You failed in round";
+        }
+    }
+</script>
+</body>
+</html>
