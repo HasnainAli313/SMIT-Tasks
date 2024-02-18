@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          background-color: rgb(50, 49, 49);
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+         
+        }
+        
+        .main{
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        }
+        .container{
+          /* background-image: url(./bg.png);
+            background-size:cover;
+            background-repeat:no-repeat ;
+            background-position: center bottom;  */
+          box-shadow: 2px 2px 100px white;
+          border: 1px solid black;
+          margin: auto;
+          height: 300px;
+          border-radius: 10px;
+          padding: 10px;
+          text-align: center;
+          background-color: rgba(167, 232, 210, 0.845);
+          width: 50%;
+        }
+        #quote{
+          color: white;
+          font-size: x-large;
+          font-weight: bold;
+          padding:10px;
+        }
+        h1{
+          color: rgb(13, 0, 255);
+        }
+        .btn{
+          padding: 7px;
+          background-color: rgb(59, 148, 237);
+          width: 200px;
+          color: white;
+          border-radius: 10px;
+          border: none;
+          font-size: larger;
+        }
+        .btn:hover{
+          background-color: rgb(28, 42, 228);
+          transition: all 0.5s linear;
+        }
+        .para{
+            font-size: x-large;
+            color: rgb(147, 19, 19);
+        }
+        /* Media */
+        @media (max-width: 768px){
+          .container {
+            width: 90%;
+          }
+          #quote{
+            font-size: large;
+          }
+  
+        }
+      </style>
+</head>
+<body>
+</div>
+<div class="main">
+  <div class="container">
+    <div class="quote-container">
+      <h1>Quotes</h1>
+      <p id="quote"></p>
+    </div>
+    <button class="btn" onclick="generateQuote()">
+      Generate Quote
+    </button>
+    <p class="para">الخلافة على المنهج النبوي</p>
+  </div>
+</div>
+
+<script>
+  // Generate Quote
+  function generateQuote() {
+    let quotes = [
+      "The best way to defeat someone is to beat him at politeness. - 'Umar ibn Al-Khattab(RA)'",
+      "I have never regretted my silence, as for my speech I've regretted it many times. - 'Umar ibn Al-Khattab(RA)'",
+      "Through patience great things are accomplished. - 'Ali Ibn Abi Talib(RA)' ",
+      "There is peace in solitude, away from the evils of people.- 'Ali Ibn Abi Talib(RA)'",
+      "One should not feel happy at the acquisition of wealth nor should be feel aggrieved at its loss.- 'Usman bin Affan(RA)' ",
+      "Silence is the best cure of the malady of anger. - 'Usman bin Affan(RA)'",
+      "Beware of pride because you will be returning to the earth, and your body will be eaten up by the worms. - 'Abu Bakr As-Siddiq(RA)'",
+      "Life comes to pass, yet death is very much closer. - 'Abu Bakr As-Siddiq(RA)'",
+      "When I am in the battlefield, I love it more than my wedding night with the most beautiful of women. ― 'Khalid ibn al-Walid(RA)'",
+      "Do not say that! How few are the Romans and how numerous are we ! 'An army's strength lies not in numbers of men but in Allah's help, and its weakness lies in being forsaken by Allah - 'Khalid ibn al-Walid(RA)'",
+    ];
+    let randomNumber = Math.floor(Math.random() * 6 + 1);
+    let quote = document.getElementById("quote").innerHTML=quotes[randomNumber];
+  }
+    </script>
+</body>
+</html>
