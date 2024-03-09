@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(235, 232, 232);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#image-container{
+    height: 350px;
+}
+img{
+    width: 300px;
+}
+.btn{
+    padding: 10px;
+    background-color: rgb(7, 165, 228);
+    width: 300px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(92, 186, 223);
+    
+}
+.heading{
+    font-size: larger;
+    color: rgb(238, 55, 55);
+}

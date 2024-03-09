@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+ function sumOfItems(){
+            let totalItems = +prompt("How much  items you bought?"); 
+            let sumOfTotalItems=0;
+            for(let i = 1; i<=2;i++){
+                let quantity = +prompt(`Please enter quantity of item ${i}`);
+                let price = +prompt(`Please enter price of item ${i}`);
+                
+                let sumOfItem = quantity*price;
+                sumOfTotalItems = sumOfTotalItems+sumOfItem;
+            }
+            console.log(sumOfTotalItems);
+        }
+        sumOfItems()
+
+        
+    </script>
+</body>
+</html>
